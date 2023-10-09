@@ -23,6 +23,10 @@ body {
   padding: 10px;
 }
 
+.margine-sup {
+  margin-top: 15vh;
+}
+
 /* 
 -----------------
 Header
@@ -34,6 +38,10 @@ nav {
   justify-content: space-between;
   background-color: yellow;
   padding: 0 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 ul {
@@ -61,11 +69,11 @@ a {
   background-color: #b4d0e7;
 }
 
-.container-abs {
+.container-header {
   border: 1px dashed black;
   width: 60%;
   margin: 0 auto;
-  padding-top: 5vh;
+  padding-top: 15vh;
 }
 
 .container-titolo {
@@ -111,9 +119,6 @@ h1 {
 Main
 -----------------
 */
-.margine-sup {
-  margin-top: 15vh;
-}
 
 h2 {
   font-size: 30px;
