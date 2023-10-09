@@ -42,9 +42,10 @@ nav {
   top: 0;
   right: 0;
   left: 0;
+  z-index: 999;
 }
 
-ul {
+nav ul {
   display: flex;
   gap: 60px;
   border: 1px solid black;
@@ -102,6 +103,7 @@ h1 {
 .foto-jumbo img {
   width: 750px;
   position: absolute;
+  display: block;
 }
 
 .testo-jumbo i {
@@ -145,11 +147,78 @@ label {
 input.round-radio {
   width: 20px;
   height: 20px;
-  border-radius: 50%;
-  border: 1px solid #000;
 }
+
+/* Box piani */
+.container-box-piani {
+  display: flex;
+  gap: 100px;
+  margin-top: 5vh;
+}
+
+.box-piani {
+  border: 1px solid #d0d0d3;
+  width: calc(100% / 3);
+}
+
+.tipologia,
+.info-tipologia {
+  padding: 0 20px;
+}
+
+.box-piani utenza {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #d0d0d3;
+}
+
+.box-piani h3 {
+  padding: 20px 0 10px;
+}
+
+.prezzo-box {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.durata {
+  color: #666666;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.info-tipologia {
+  margin-top: 50px;
+  border: 1px solid red;
+}
+
+.info-tipologia ul {
+  list-style-type: none;
+}
+
+.prova {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.btn-prova {
+  background-color: #0061ff;
+  color: white;
+  padding: 10px 40px;
+}
+
+.cop {
+  text-align: left;
+}
+
 /* 
 -----------------
 Footer
+-----------------
+*/
+
+/* 
+-----------------
+Hovers
 -----------------
 */
