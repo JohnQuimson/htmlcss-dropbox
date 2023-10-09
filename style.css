@@ -36,7 +36,7 @@ Header
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: yellow;
+  background-color: white;
   padding: 0 20px;
   position: fixed;
   top: 0;
@@ -48,21 +48,16 @@ nav {
 nav ul {
   display: flex;
   gap: 60px;
-  border: 1px solid black;
   line-height: 60px;
   list-style-type: none;
 }
 
 a {
   text-decoration: none;
+  color: black;
 }
 
-/* .nav-sx ul li img {
-  height: 20px;
-} */
-
 .nav-sx ul li {
-  border: 1px solid black;
 }
 
 /* Jumbotron */
@@ -166,7 +161,7 @@ input.round-radio {
   padding: 0 20px;
 }
 
-.box-piani utenza {
+.box-piani p {
   text-align: center;
   padding: 10px;
   border: 1px solid #d0d0d3;
@@ -207,6 +202,20 @@ input.round-radio {
   padding: 10px 40px;
 }
 
+.info-tipologia ul li {
+  display: flex;
+}
+
+.info-tipologia ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-tipologia ul li i {
+  margin: 3px 5px 0 0;
+}
+
 .cop {
   text-align: left;
 }
@@ -222,3 +231,11 @@ Footer
 Hovers
 -----------------
 */
+
+nav ul li:hover {
+  border-bottom: 2px solid black;
+}
+
+nav ul li .bottone:hover {
+  background-color: #70a5fc;
+}
