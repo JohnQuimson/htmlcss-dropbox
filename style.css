@@ -147,21 +147,22 @@ input.round-radio {
 /* Box piani */
 .container-box-piani {
   display: flex;
-  gap: 100px;
+  gap: 80px;
   margin-top: 5vh;
 }
 
 .box-piani {
   border: 1px solid #d0d0d3;
   width: calc(100% / 3);
+  padding-bottom: 50px;
 }
 
 .tipologia,
 .info-tipologia {
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
-.box-piani p {
+.box-piani .utenza {
   text-align: center;
   padding: 10px;
   border: 1px solid #d0d0d3;
@@ -184,7 +185,6 @@ input.round-radio {
 
 .info-tipologia {
   margin-top: 50px;
-  border: 1px solid red;
 }
 
 .info-tipologia ul {
@@ -194,12 +194,15 @@ input.round-radio {
 .prova {
   margin-top: 70px;
   text-align: center;
+  width: 80%;
+  margin: 70px auto;
+  background-color: #0061ff;
+  padding: 10px 0;
 }
 
 .btn-prova {
   background-color: #0061ff;
   color: white;
-  padding: 10px 40px;
 }
 
 .info-tipologia ul li {
@@ -217,7 +220,42 @@ input.round-radio {
 }
 
 .cop {
-  text-align: left;
+  margin: 50px 0;
+  padding: 0 20px;
+}
+
+.cop a {
+  color: #0061ff;
+  text-decoration: underline;
+}
+
+hr {
+  width: 60px;
+  margin-left: 20px;
+  border: 0.5px solid #c7c7c7;
+}
+
+h4 {
+  margin: 50px 0 30px;
+}
+
+.novita {
+  padding: 0 20px;
+}
+
+.novita ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.novita ul li {
+  display: flex;
+}
+
+.novita ul li i {
+  margin: 3px 5px 0 0;
 }
 
 /* 
