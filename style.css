@@ -149,12 +149,13 @@ input.round-radio {
   display: flex;
   gap: 80px;
   margin-top: 5vh;
+  flex-wrap: wrap;
 }
 
 .box-piani {
   border: 1px solid #d0d0d3;
-  width: calc(100% / 3);
-  padding-bottom: 50px;
+  width: calc((100% - 160px) / 3);
+  padding-bottom: 40px;
 }
 
 .tipologia,
@@ -162,14 +163,17 @@ input.round-radio {
   padding: 0 30px;
 }
 
-.box-piani .utenza {
+.box-piani .utenza,
+.box-orizz .utenza {
   text-align: center;
   padding: 10px;
-  border: 1px solid #d0d0d3;
+  border-bottom: 1px solid #d0d0d3;
 }
 
-.box-piani h3 {
+.box-piani h3,
+.box-orizz h3 {
   padding: 20px 0 10px;
+  font-size: 25px;
 }
 
 .prezzo-box {
@@ -256,6 +260,27 @@ h4 {
 
 .novita ul li i {
   margin: 3px 5px 0 0;
+}
+
+/* Box orizzontale */
+.box-orizz {
+  border: 1px solid #d0d0d3;
+  width: 100%;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.btn-orizz {
+  background-color: #0061ff;
+  padding: 10px 40px;
+  color: white;
+  position: absolute;
+  right: 30px;
+  top: 70px;
+}
+
+.info-orizz {
+  padding: 50px 0 0 30px;
 }
 
 /* 
