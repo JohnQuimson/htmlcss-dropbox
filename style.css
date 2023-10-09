@@ -125,6 +125,29 @@ h2 {
   margin-bottom: 5vh;
 }
 
+.container-abs {
+  border: 1px dashed black;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 15vh;
+}
+
+/* Radio buttons */
+.radiobutton-container {
+  display: flex;
+  align-items: center;
+}
+
+label {
+  margin: 0 70px 0 5px;
+}
+
+input.round-radio {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
 /* 
 -----------------
 Footer
