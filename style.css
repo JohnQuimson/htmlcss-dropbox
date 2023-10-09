@@ -14,26 +14,95 @@ Common
 -----------------
 */
 body {
-  font-family: 'Fredoka', sans-serif;
   font-family: 'Open Sans', sans-serif;
+}
+
+.bottone {
+  background-color: #0061ff;
+  color: white;
+  padding: 10px;
 }
 /* 
 -----------------
 Header
 -----------------
 */
-
+/* Navbar */
 nav {
   display: flex;
   justify-content: space-between;
   background-color: yellow;
+  padding: 0 20px;
 }
 
 ul {
   display: flex;
-  gap: 50px;
+  gap: 60px;
   border: 1px solid black;
-  line-height: 50px;
+  line-height: 60px;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* .nav-sx ul li img {
+  height: 20px;
+} */
+
+.nav-sx ul li {
+  border: 1px solid black;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-color: #b4d0e7;
+}
+
+.container-abs {
+  border: 1px dashed black;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 5vh;
+}
+
+.container-titolo {
+  border: 1px dashed rgb(109, 13, 104);
+  width: 90%;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.cont-jumbo {
+  display: flex;
+  padding-top: 4vh;
+}
+
+.testo-jumbo {
+  width: 30%;
+}
+
+.foto-jumbo {
+  width: 70%;
+}
+
+.foto-jumbo img {
+  width: 750px;
+  position: fixed;
+}
+
+.testo-jumbo i {
+  font-size: 40px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.testo-jumbo div {
+  margin-top: 40px;
 }
 
 /* 
