@@ -502,13 +502,6 @@ h4 {
   border: 1px solid white;
 }
 
-.basement-company button:hover {
-  background-color: #0061ff;
-  border: 1px solid #0061ff;
-  color: white;
-  cursor: pointer;
-}
-
 /* FAQ */
 
 .cont-faq {
@@ -522,24 +515,51 @@ h4 {
   margin-bottom: 50px;
 }
 
-.cont-faq ul {
-  list-style-type: none;
-}
-
 .cont-faq ul li {
-  display: flex;
-  justify-content: space-between;
-  padding: 40px 10px;
   border-top: 1px solid #999999;
+  list-style: none;
+  width: 100%;
+  padding: 20px 0;
 }
 
 .cont-faq ul li:last-child {
   border-bottom: 1px solid #999999;
 }
 
-.cont-faq ul li span {
+.cont-faq label {
   font-weight: bold;
 }
+
+/* DropDown menù */
+
+/* Per far si che il testo e font-awesome si affianchino */
+.cont-faq ul li label {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Nasconde l'elemento di selezione del browser */
+.cont-faq ul label + input[type='radio'] {
+  display: none;
+}
+
+/* Nascondo il div con la classe .content, con overflow */
+.cont-faq ul .content {
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  width: 80%;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+/* Quando l'elemento di selezione è selezionato, il div con la class content, si alzerà del suo contenuto, con un limite di max-height */
+.cont-faq ul label + input[type='radio']:checked + .content {
+  max-height: 200px;
+}
+
 /* 
 -----------------
 Footer
@@ -600,11 +620,27 @@ footer {
 Hovers
 -----------------
 */
-
+/* Hover navbar */
 nav ul li:hover {
   border-bottom: 2px solid black;
 }
 
 nav ul li .bottone:hover {
   background-color: #70a5fc;
+}
+/* Hover basement-company */
+.basement-company button:hover {
+  background-color: #0061ff;
+  border: 1px solid #0061ff;
+  color: white;
+  cursor: pointer;
+}
+
+/* hover dropdown */
+.cont-faq ul li:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+label:hover {
+  cursor: pointer;
 }
