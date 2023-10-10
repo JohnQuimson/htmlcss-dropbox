@@ -378,12 +378,11 @@ h4 {
 .container-abs-company {
   margin-top: 15vh;
   display: flex;
-  border: 1px dashed black;
   justify-content: space-between;
 }
 
+/* Sinistra */
 .cont-company-sx {
-  border: 1px solid purple;
   display: flex;
   flex-wrap: wrap;
   width: calc(100% / 3);
@@ -393,7 +392,6 @@ h4 {
   width: 50%;
   /* come far si che height sia uguale a width, il quale è 50% del contenitore*/
   height: 300px;
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -402,10 +400,38 @@ h4 {
 .box-company img {
   width: 50%;
   filter: invert(1);
+  display: block;
 }
 
+/* Centro */
+.cont-company-centro {
+  width: calc(100% / 3);
+  border: 2px solid purple;
+}
+
+.cont-company-centro img {
+  width: 60%;
+  margin-top: 50px;
+  display: block;
+}
+
+.cont-centro-argom {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cont-centro-argom hr {
+  border-color: #dfdfdf;
+  margin: 50px 0;
+  width: 100px;
+}
+
+.cont-centro-argom p {
+  margin-bottom: 50px;
+}
+
+/* Destra */
 .cont-company-dx {
-  border: 1px solid purple;
   display: flex;
   flex-wrap: wrap;
   width: calc(100% / 3);
