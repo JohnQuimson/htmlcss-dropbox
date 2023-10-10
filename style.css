@@ -43,13 +43,20 @@ nav {
   right: 0;
   left: 0;
   z-index: 999;
+  box-shadow: 0px 1px 2px #dedede;
+  line-height: 80px;
 }
 
 nav ul {
   display: flex;
   gap: 60px;
-  line-height: 60px;
+
   list-style-type: none;
+  align-items: center;
+}
+
+nav ul li img {
+  vertical-align: middle;
 }
 
 a {
@@ -66,25 +73,24 @@ a {
 }
 
 .container-header {
-  border: 1px dashed black;
   width: 60%;
   margin: 0 auto;
   padding-top: 15vh;
+  position: relative;
 }
 
 .container-titolo {
-  border: 1px dashed rgb(109, 13, 104);
   width: 90%;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 800;
 }
 
 .cont-jumbo {
   display: flex;
-  padding-top: 4vh;
+  padding-top: 7vh;
 }
 
 .testo-jumbo {
@@ -96,19 +102,18 @@ h1 {
 }
 
 .foto-jumbo img {
-  width: 750px;
+  width: 800px;
   position: absolute;
-  display: block;
+}
+
+.testo-jumbo div {
+  margin-top: 60px;
 }
 
 .testo-jumbo i {
   font-size: 40px;
   margin-top: 60px;
   margin-bottom: 20px;
-}
-
-.testo-jumbo div {
-  margin-top: 40px;
 }
 
 /* 
@@ -123,8 +128,7 @@ h2 {
 }
 
 .container-abs {
-  border: 1px dashed black;
-  width: 60%;
+  width: 55%;
   margin: 0 auto;
   padding-top: 15vh;
 }
@@ -281,6 +285,94 @@ h4 {
 
 .info-orizz {
   padding: 50px 0 0 30px;
+}
+
+/* Partner */
+.container-partner {
+  display: flex;
+  width: 55%;
+  margin: 0 auto;
+  padding-top: 15vh;
+  gap: 50px;
+  padding-right: 50px;
+}
+
+.box-foto-partner {
+  width: 60%;
+}
+
+.box-foto-partner img {
+  width: 100%;
+}
+
+.box-testo-partner {
+  width: 50%;
+  padding-right: 50px;
+}
+
+.box-testo-partner h3 {
+  margin-top: 50px;
+
+  font-size: 25px;
+}
+
+.box-testo-partner p {
+  margin-top: 30px;
+}
+
+.box-testo-partner button {
+  margin-top: 30px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.box-testo-partner button:hover {
+  background-color: #0061ff;
+  border: 1px solid #0061ff;
+  color: white;
+  cursor: pointer;
+}
+
+/* Operazioni Dropbox business */
+.titolo-op-business {
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 15vh;
+}
+
+.container-op-business {
+  display: flex;
+  width: 55%;
+  margin: 0 auto;
+
+  flex-wrap: wrap;
+  gap: 50px 20px;
+}
+
+.box-op {
+  width: calc((100% - 40px) / 3);
+  display: flex;
+  flex-direction: column;
+}
+
+.box-op img {
+  width: 100%;
+}
+
+.box-op h4 {
+  font-size: 25px;
+}
+
+.basement-op-business {
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.basement-op-business a {
+  color: #0000f1;
+  text-decoration: underline;
 }
 
 /* 
