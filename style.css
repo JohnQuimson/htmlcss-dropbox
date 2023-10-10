@@ -483,24 +483,23 @@ h4 {
 }
 
 .cont-basem-company {
-  border: 1px solid black;
   width: 60%;
   margin: 0 auto;
   display: flex;
+  align-items: start;
+  justify-content: space-between;
 }
 
 .basement-company h2 {
   width: 50%;
   color: #61082b;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .cont-basem-company button {
-  padding: 5px;
-  display: flex;
-  justify-content: center;
+  padding: 15px 70px;
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid white;
 }
 
 .basement-company button:hover {
