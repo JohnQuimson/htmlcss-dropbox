@@ -128,7 +128,7 @@ Main
 }
 
 .container-abs {
-  width: 55%;
+  width: 60%;
   margin: 0 auto;
   padding-top: 15vh;
 }
@@ -237,7 +237,7 @@ input.round-radio {
   text-decoration: underline;
 }
 
-hr {
+.box-piani hr {
   width: 60px;
   margin-left: 20px;
   border: 0.5px solid #c7c7c7;
@@ -290,10 +290,10 @@ h4 {
 /* Partner */
 .container-partner {
   display: flex;
-  width: 55%;
+  width: 60%;
   margin: 0 auto;
   padding-top: 15vh;
-  gap: 50px;
+  gap: 60px;
   padding-right: 50px;
 }
 
@@ -336,14 +336,14 @@ h4 {
 
 /* Operazioni Dropbox business */
 .titolo-op-business {
-  width: 55%;
+  width: 60%;
   margin: 0 auto;
   margin-top: 15vh;
 }
 
 .container-op-business {
   display: flex;
-  width: 55%;
+  width: 60%;
   margin: 0 auto;
   flex-wrap: wrap;
   gap: 50px 20px;
@@ -364,9 +364,14 @@ h4 {
 }
 
 .basement-op-business {
-  width: 55%;
+  width: 60%;
   margin: 0 auto;
   margin-top: 100px;
+}
+
+.basement-op-business h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
 }
 
 .basement-op-business a {
@@ -479,7 +484,7 @@ h4 {
 
 .cont-basem-company {
   border: 1px solid black;
-  width: 55%;
+  width: 60%;
   margin: 0 auto;
   display: flex;
 }
@@ -508,7 +513,7 @@ h4 {
 /* FAQ */
 
 .cont-faq {
-  width: 55%;
+  width: 60%;
   margin: 0 auto;
   margin-top: 15vh;
 }
@@ -526,11 +531,11 @@ h4 {
   display: flex;
   justify-content: space-between;
   padding: 40px 10px;
-  border-top: 1px solid black;
+  border-top: 1px solid #999999;
 }
 
 .cont-faq ul li:last-child {
-  border-top: 1px solid black;
+  border-bottom: 1px solid #999999;
 }
 
 .cont-faq ul li span {
@@ -541,6 +546,55 @@ h4 {
 Footer
 -----------------
 */
+footer {
+  background-color: black;
+  margin-top: 15vh;
+}
+
+.container-footer {
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.cont-list {
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+}
+
+.container-footer ul li {
+  list-style-type: none;
+}
+
+.container-footer ul li h5 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.container-footer ul li {
+  padding: 5px;
+  color: white;
+}
+
+.container-footer ul li a {
+  font-size: 14px;
+  color: white;
+}
+
+.container-footer hr {
+  width: 80px;
+  margin-top: 50px;
+  border-color: #999999;
+}
+
+.lingua {
+  color: #999999;
+  margin-top: 50px;
+  font-size: 14px;
+}
 
 /* 
 -----------------
