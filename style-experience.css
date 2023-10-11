@@ -17,12 +17,6 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.bottone {
-  background-color: #0061ff;
-  color: white;
-  padding: 10px;
-}
-
 .margine-sup {
   margin-top: 15vh;
 }
@@ -70,51 +64,47 @@ a {
 
 /* Jumbotron */
 .jumbotron {
-  background-color: #b4d0e7;
+  color: white;
+  background-color: #1e1919;
+  display: flex;
 }
 
-.container-header {
+/* .container-header {
   width: 60%;
   margin: 0 auto;
   padding-top: 15vh;
   position: relative;
-}
-
-.container-titolo {
-  width: 90%;
-}
-
-h1 {
-  font-size: 70px;
-  font-weight: 800;
-}
+} */
 
 .cont-jumbo {
   display: flex;
-  padding-top: 7vh;
+  padding: 15vh 0 10vh;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  align-items: center;
 }
 
-.testo-jumbo {
-  width: 30%;
+h1 {
+  font-size: 50px;
+  text-align: center;
+  width: 90%;
 }
 
-.foto-jumbo {
-  width: 70%;
+.cont-jumbo p {
+  text-align: center;
+  margin-top: 2vh;
 }
 
-.foto-jumbo img {
-  width: 800px;
-  position: absolute;
+.cont-jumbo .bottone {
+  background-color: #5998ff;
+  padding: 20px;
+  margin: 5vh 0 10vh;
+  border-radius: 20px;
 }
 
-.testo-jumbo div {
-  margin-top: 40px;
-}
-
-.testo-jumbo i {
-  font-size: 40px;
-  margin-top: 70px;
-  margin-bottom: 20px;
+.cont-jumbo img {
+  width: 130%;
 }
 
 /* 
