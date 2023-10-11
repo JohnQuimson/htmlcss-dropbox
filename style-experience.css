@@ -14,7 +14,7 @@ Common
 -----------------
 */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bricolage Grotesque', sans-serif;
 }
 
 .margine-sup {
@@ -59,7 +59,10 @@ a {
   color: black;
 }
 
-.nav-sx ul li {
+.bottone {
+  background-color: #0061ff;
+  color: white;
+  padding: 10px;
 }
 
 /* Jumbotron */
@@ -68,13 +71,6 @@ a {
   background-color: #1e1919;
   display: flex;
 }
-
-/* .container-header {
-  width: 60%;
-  margin: 0 auto;
-  padding-top: 15vh;
-  position: relative;
-} */
 
 .cont-jumbo {
   display: flex;
@@ -92,15 +88,23 @@ h1 {
 }
 
 .cont-jumbo p {
+  font-size: 18px;
   text-align: center;
   margin-top: 2vh;
+  font-weight: 200;
 }
 
 .cont-jumbo .bottone {
   background-color: #5998ff;
   padding: 20px;
   margin: 5vh 0 10vh;
+}
+
+.cont-jumbo .bottone:hover {
+  background-color: #7caefd;
   border-radius: 20px;
+  transition: all 0.3s;
+  color: white;
 }
 
 .cont-jumbo img {
@@ -112,444 +116,86 @@ h1 {
 Main
 -----------------
 */
-
-.container-abs h2 {
-  font-size: 40px;
-  margin-bottom: 5vh;
+main {
+  background-color: #f7f5f2;
 }
 
-.container-abs {
-  width: 60%;
-  margin: 0 auto;
-  padding-top: 15vh;
-}
-
-/* Radio buttons */
-.radiobutton-container {
-  display: flex;
-  align-items: center;
-}
-
-label {
-  margin: 0 70px 0 5px;
-}
-
-input.round-radio {
-  width: 20px;
-  height: 20px;
-}
-
-/* Box piani */
-.container-box-piani {
-  display: flex;
-  gap: 80px;
-  margin-top: 5vh;
-  flex-wrap: wrap;
-}
-
-.box-piani {
-  border: 1px solid #d0d0d3;
-  width: calc((100% - 160px) / 3);
-  padding-bottom: 40px;
-}
-
-.tipologia,
-.info-tipologia {
-  padding: 0 30px;
-}
-
-.box-piani .utenza,
-.box-orizz .utenza {
-  text-align: center;
-  padding: 10px;
-  border-bottom: 1px solid #d0d0d3;
-}
-
-.box-piani h3,
-.box-orizz h3 {
-  padding: 20px 0 10px;
-  font-size: 25px;
-}
-
-.prezzo-box {
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.durata {
-  color: #666666;
-  font-size: 14px;
-  margin: 10px 0;
-}
-
-.info-tipologia {
-  margin-top: 50px;
-}
-
-.info-tipologia ul {
-  list-style-type: none;
-}
-
-.prova button {
-  text-align: center;
-  width: 80%;
-  margin: 50px 30px 0;
-  background-color: #0061ff;
-  padding: 15px 0;
-  color: white;
-  border: none;
-}
-
-/* .btn-prova {
-  background-color: #0061ff;
-  color: white;
-} */
-
-.info-tipologia ul li {
+.box {
   display: flex;
 }
 
-.info-tipologia ul {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.foto {
+  width: 50%;
 }
 
-.info-tipologia ul li i {
-  margin: 3px 5px 0 0;
-}
-
-.cop {
-  margin: 50px 0;
-  padding: 0 20px;
-}
-
-.cop a {
-  color: #0061ff;
-  text-decoration: underline;
-}
-
-.box-piani hr {
-  width: 60px;
-  margin-left: 20px;
-  border: 0.5px solid #c7c7c7;
-}
-
-h4 {
-  margin: 50px 0 30px;
-}
-
-.novita {
-  padding: 0 20px;
-}
-
-.novita ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.novita ul li {
-  display: flex;
-}
-
-.novita ul li i {
-  margin: 3px 5px 0 0;
-}
-
-/* Box orizzontale */
-.box-orizz {
-  border: 1px solid #d0d0d3;
+.foto img {
   width: 100%;
-  padding-bottom: 50px;
+  display: block;
+}
+
+.testo {
+  width: 50%;
+  padding: 40px 100px 0 60px;
   position: relative;
 }
 
-.btn-orizz {
-  background-color: #0061ff;
-  padding: 10px 40px;
-  color: white;
+.testo h3 {
+  font-size: 45px;
+  font-weight: 400;
+  margin: 10px 0 20px;
+}
+
+.testo p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.bottom-testo {
   position: absolute;
-  right: 30px;
-  top: 70px;
+  bottom: 50px;
 }
 
-.info-orizz {
-  padding: 50px 0 0 30px;
-}
-
-/* Partner */
-.container-partner {
-  display: flex;
-  width: 60%;
-  margin: 0 auto;
-  padding-top: 15vh;
-  gap: 60px;
-  padding-right: 50px;
-}
-
-.box-foto-partner {
-  width: 60%;
-}
-
-.box-foto-partner img {
-  width: 100%;
-}
-
-.box-testo-partner {
-  width: 50%;
-  padding-right: 50px;
-}
-
-.box-testo-partner h3 {
-  margin-top: 50px;
-
-  font-size: 25px;
-}
-
-.box-testo-partner p {
-  margin-top: 30px;
-}
-
-.box-testo-partner button {
-  margin-top: 30px;
-  padding: 10px;
-  background-color: white;
-  border: 1px solid black;
-}
-
-.box-testo-partner button:hover {
+.testo .bottone {
   background-color: #0061ff;
-  border: 1px solid #0061ff;
   color: white;
-  cursor: pointer;
+  padding: 15px;
 }
 
-/* Operazioni Dropbox business */
-.titolo-op-business {
-  width: 60%;
-  margin: 0 auto;
-  margin-top: 15vh;
+.testo .bottone:hover {
+  background-color: #4c8ef8;
 }
 
-.container-op-business {
-  display: flex;
-  width: 60%;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  gap: 50px 20px;
-}
-
-.box-op {
-  width: calc((100% - 40px) / 3);
-  display: flex;
-  flex-direction: column;
-}
-
-.box-op img {
-  width: 100%;
-}
-
-.box-op h4 {
-  font-size: 25px;
-}
-
-.basement-op-business {
-  width: 60%;
-  margin: 0 auto;
-  margin-top: 100px;
-}
-
-.basement-op-business h2 {
-  font-size: 40px;
-  margin-bottom: 40px;
-}
-
-.basement-op-business a {
-  color: #0000f1;
+.testo .info {
+  margin-left: 20px;
   text-decoration: underline;
 }
 
-/* Company */
-.container-abs-company {
-  margin-top: 15vh;
-  display: flex;
-  justify-content: space-between;
-}
-
-/* Sinistra */
-.cont-company-sx {
-  display: flex;
-  flex-wrap: wrap;
-  width: calc(100% / 3);
-}
-
-.box-company {
-  width: calc(100% / 2);
-  /* come far si che height sia uguale a width, il quale è 50% del contenitore*/
-  height: calc(100vw / 6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.box-company img {
-  width: 50%;
-  filter: invert(1);
-  display: block;
-}
-
-/* Centro */
-.cont-company-centro {
-  width: calc(100% / 3);
-  background-color: #f5f5f5;
-}
-
-.cont-company-centro img {
-  width: 60%;
-  margin-top: 50px;
-  display: block;
-}
-
-.cont-centro-argom {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.cont-centro-argom hr {
-  border-color: #dfdfdf;
-  margin: 50px 0;
-  width: 100px;
-}
-
-.cont-centro-argom p {
-  margin-bottom: 50px;
-}
-
-/* Destra */
-.cont-company-dx {
-  display: flex;
-  flex-wrap: wrap;
-  width: calc(100% / 3);
-}
-
-/* Colori company */
-.salvia {
-  background-color: #a2d39b;
-  border: 15px solid #d1e9cd;
-}
-
-.granata {
-  background-color: #61082b;
-}
-
-.ciano {
-  background-color: #0093ce;
-}
-
-.red {
-  background-color: #ff1c1c;
-}
-
-.darker-red {
-  background-color: #d5001f;
-}
-
-.blue {
-  background-color: #0d2481;
-}
-
-.yellow {
-  background-color: #ffd830;
-}
-
-.light-blue {
-  background-color: #b4d0e7;
-}
-
-/* Basement-company */
+/* Basement-main */
 .basement-company {
   padding: 100px 0;
-  background-color: #b4d0e7;
+  background-color: #fad04a;
 }
 
 .cont-basem-company {
   width: 60%;
   margin: 0 auto;
-  display: flex;
   align-items: start;
-  justify-content: space-between;
-}
-
-.basement-company h2 {
-  width: 50%;
-  color: #61082b;
-  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cont-basem-company button {
-  padding: 15px 70px;
-  background-color: white;
-  border: 1px solid white;
-}
-
-/* FAQ */
-
-.cont-faq {
-  width: 60%;
-  margin: 0 auto;
-  margin-top: 15vh;
-}
-
-.cont-faq h2 {
-  font-size: 35px;
-  margin-bottom: 50px;
-}
-
-.cont-faq ul li {
-  border-top: 1px solid #999999;
-  list-style: none;
-  width: 100%;
-  padding: 20px 0;
-}
-
-.cont-faq ul li:last-child {
-  border-bottom: 1px solid #999999;
-}
-
-.cont-faq label {
-  font-weight: bold;
-}
-
-/* DropDown menù */
-
-/* Per far si che il testo e font-awesome si affianchino */
-.cont-faq ul li label {
   padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  background: none;
+  border: none;
+  border-bottom: 1px solid black;
 }
 
-/* Nasconde l'elemento di selezione del browser */
-.cont-faq ul label + input[type='radio'] {
-  display: none;
-}
-
-/* Nascondo il div con la classe .content, con overflow */
-.cont-faq ul .content {
-  padding: 0 10px;
-  line-height: 26px;
-  max-height: 0;
-  width: 80%;
-  overflow: hidden;
-  transition: max-height 0.5s;
-}
-
-/* Quando l'elemento di selezione è selezionato, il div con la class content, si alzerà del suo contenuto, con un limite di max-height */
-.cont-faq ul label + input[type='radio']:checked + .content {
-  max-height: 200px;
+.cont-basem-company button a {
+  color: #1e1919;
+  font-size: 70px;
+  font-weight: 300;
 }
 
 /* 
@@ -558,8 +204,7 @@ Footer
 -----------------
 */
 footer {
-  background-color: black;
-  margin-top: 15vh;
+  background-color: #1e1919;
 }
 
 .container-footer {
@@ -602,7 +247,7 @@ footer {
 }
 
 .lingua {
-  color: #999999;
+  color: white;
   margin-top: 50px;
   font-size: 14px;
 }
@@ -614,42 +259,14 @@ Hovers
 */
 /* Hover navbar */
 nav ul li:hover {
-  border-bottom: 2px solid black;
+  text-decoration: underline;
 }
 
 nav ul li .bottone:hover {
   background-color: #70a5fc;
 }
 
-.bottone:hover {
-  background-color: #70a5fc;
-}
-
-.prova button:hover {
-  background-color: #70a5fc;
-  cursor: pointer;
-}
-
-.btn-orizz:hover {
-  background-color: #70a5fc;
-}
-
 /* Hover basement-company */
-.basement-company button:hover {
-  background-color: #0061ff;
-  border: 1px solid #0061ff;
-  color: white;
-  cursor: pointer;
-}
-
-/* hover dropdown */
-.cont-faq ul li:hover {
-  background-color: rgb(230, 230, 230);
-}
-
-label:hover {
-  cursor: pointer;
-}
 
 /* Footer */
 .container-footer ul li a:hover {
