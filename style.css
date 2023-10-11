@@ -199,19 +199,20 @@ input.round-radio {
   list-style-type: none;
 }
 
-.prova {
-  margin-top: 70px;
+.prova button {
   text-align: center;
   width: 80%;
-  margin: 70px auto;
+  margin: 50px 30px 0;
   background-color: #0061ff;
-  padding: 10px 0;
+  padding: 15px 0;
+  color: white;
+  border: none;
 }
 
-.btn-prova {
+/* .btn-prova {
   background-color: #0061ff;
   color: white;
-}
+} */
 
 .info-tipologia ul li {
   display: flex;
@@ -394,9 +395,9 @@ h4 {
 }
 
 .box-company {
-  width: 50%;
+  width: calc(100% / 2);
   /* come far si che height sia uguale a width, il quale è 50% del contenitore*/
-  height: 300px;
+  height: calc(100vw / 6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -628,6 +629,20 @@ nav ul li:hover {
 nav ul li .bottone:hover {
   background-color: #70a5fc;
 }
+
+.bottone:hover {
+  background-color: #70a5fc;
+}
+
+.prova button:hover {
+  background-color: #70a5fc;
+  cursor: pointer;
+}
+
+.btn-orizz:hover {
+  background-color: #70a5fc;
+}
+
 /* Hover basement-company */
 .basement-company button:hover {
   background-color: #0061ff;
@@ -642,5 +657,15 @@ nav ul li .bottone:hover {
 }
 
 label:hover {
+  cursor: pointer;
+}
+
+/* Footer */
+.container-footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.container-footer .lingua:hover {
+  text-decoration: underline;
   cursor: pointer;
 }
