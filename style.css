@@ -206,14 +206,15 @@ input.round-radio {
   margin: 50px 30px 0;
   background-color: #0061ff;
   padding: 15px 0;
-  color: white;
   border: none;
+  color: white;
 }
 
-/* .btn-prova {
-  background-color: #0061ff;
+.prova button a {
   color: white;
-} */
+  border: none;
+  font-size: 16px;
+}
 
 .info-tipologia ul li {
   display: flex;
